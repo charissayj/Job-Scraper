@@ -12,14 +12,14 @@ uClient.close()
 #html parsing
 page_soup = soup(page_html, "html.parser")
 
-#grab all divs of item-container
+#grab all divs with a class of result
 results = page_soup.findAll("div", {"class": "result"})
-print len(results)
+#print len(results)
 
 filename = "jobs.csv"
 f = open(filename, "w")
 
-headers = "Title, Company, Location, Experience, Link \n"
+#headers = "Title, Company, Location, Experience, Link \n"
 
 f.write(headers)
 
