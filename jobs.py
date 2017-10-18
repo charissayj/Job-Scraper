@@ -19,7 +19,7 @@ results = page_soup.findAll("div", {"class": "result"})
 filename = "jobs.csv"
 f = open(filename, "w")
 
-#headers = "Title, Company, Location, Experience, Link \n"
+headers = "Title, Company, Location, Experience, Link \n"
 
 f.write(headers)
 
